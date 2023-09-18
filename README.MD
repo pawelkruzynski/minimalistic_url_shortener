@@ -22,7 +22,7 @@ So there's no real handling of errors, bad requests etc.
 </details>
 
 
-#### Returning expandee url for a short url
+#### Returning expanded url for a short url
 
 <details>
  <summary><code>GET</code><code><b>/api/{uuid}</b></summary>
