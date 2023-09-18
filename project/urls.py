@@ -17,6 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from shortener.views import (
+    create_short_url,
+    get_short_url,
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('api', create_short_url, name='create_short_url'),
+    path('api/<str:id>', get_short_url, name='get_short_url'),
 ]
